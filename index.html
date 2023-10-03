@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!---->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
@@ -22,7 +23,13 @@
 <body>
 
   <div class="product">
-    <img class="product__image" src="images/image-product-mobile.jpg" alt="perfume">
+  <!-- Imatge responsive -->
+    <picture>
+      <source class="product__image-desktop" media="(min-width:900px)" srcset="images/image-product-desktop.jpg">
+
+      <img class="product__image" src="images/image-product-mobile.jpg" alt="Perfum">
+    </picture>
+
     <div class="product__content">
       <div class="product__category">Perfume</div>
 
